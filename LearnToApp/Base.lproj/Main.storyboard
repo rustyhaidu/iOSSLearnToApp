@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LearnToApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vAS-8P-mrt">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="wRE-ev-rpW">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRANZ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9s-eK-qNz">
+                                <rect key="frame" x="340.66666666666669" y="32" width="55" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sun_summer" translatesAutoresizingMaskIntoConstraints="NO" id="zm5-Hp-tAU">
+                                <rect key="frame" x="-44" y="166" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day: 0" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igb-Xw-HXv">
+                                <rect key="frame" x="334.33333333333331" y="292.66666666666669" width="67.666666666666686" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IG9-E3-7ie">
+                                <rect key="frame" x="318" y="324" width="100" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CZl-nZ-Czf"/>
+                                    <constraint firstAttribute="width" constant="100" id="PX9-dJ-CwE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qfE-n8-Hfk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.24790172337109831" green="0.50403673780133529" blue="0.90428696065989844" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wRE-ev-rpW" firstAttribute="leading" secondItem="D73-Wt-tp9" secondAttribute="leading" id="4GR-mJ-duh"/>
+                            <constraint firstItem="wRE-ev-rpW" firstAttribute="top" secondItem="D73-Wt-tp9" secondAttribute="top" id="6UF-db-L7D"/>
+                            <constraint firstItem="igb-Xw-HXv" firstAttribute="centerX" secondItem="D73-Wt-tp9" secondAttribute="centerX" id="I9Q-S1-HL0"/>
+                            <constraint firstItem="K9s-eK-qNz" firstAttribute="centerX" secondItem="D73-Wt-tp9" secondAttribute="centerX" id="KWb-hV-SSl"/>
+                            <constraint firstItem="D73-Wt-tp9" firstAttribute="bottom" secondItem="IG9-E3-7ie" secondAttribute="bottom" constant="30" id="POb-0e-jIv"/>
+                            <constraint firstItem="D73-Wt-tp9" firstAttribute="trailing" secondItem="wRE-ev-rpW" secondAttribute="trailing" id="alg-GQ-wNf"/>
+                            <constraint firstItem="igb-Xw-HXv" firstAttribute="centerY" secondItem="D73-Wt-tp9" secondAttribute="centerY" constant="100" id="h6j-F1-hkW"/>
+                            <constraint firstItem="IG9-E3-7ie" firstAttribute="centerX" secondItem="D73-Wt-tp9" secondAttribute="centerX" id="rqI-ga-ovb"/>
+                            <constraint firstItem="K9s-eK-qNz" firstAttribute="top" secondItem="D73-Wt-tp9" secondAttribute="top" constant="32" id="wkc-uY-CYb"/>
+                            <constraint firstAttribute="bottom" secondItem="wRE-ev-rpW" secondAttribute="bottom" id="zzV-pK-fuA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D73-Wt-tp9"/>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="wRE-ev-rpW" id="FHC-VU-u7p"/>
+                        <outlet property="passedDay" destination="igb-Xw-HXv" id="KXN-gv-g3b"/>
+                        <outlet property="sunImage" destination="zm5-Hp-tAU" id="Q5W-eX-d6F"/>
+                        <outlet property="timeOfDayLabel" destination="K9s-eK-qNz" id="J6J-vF-Dfj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-173.91304347826087" y="48.913043478260875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="341" height="640"/>
+        <image name="sun_summer" width="278" height="278"/>
+    </resources>
+</document>
